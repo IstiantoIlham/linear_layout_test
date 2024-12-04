@@ -2,12 +2,14 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+var bundlerId = "com.example.linearlayouttest"
+
 android {
-    namespace = "com.example.myfirstapplication"
+    namespace = bundlerId
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.myfirstapplication"
+        applicationId = bundlerId
         minSdk = 24
         targetSdk = 34
         versionCode = 1
